@@ -56,47 +56,28 @@
           font-size: 15px;
           color: white;
     }
-    .hero-shop-name-01 {
-      position: absolute;
-      left: 50%;
-      bottom: 2.5%;
-      transform: translate(-50%, -50%);
+    .carousel-text-01 {
       color: white;
       font-family: Cursive, Times, serif;
-      font-size: 7vw;
+      font-size: 50px;
     }
-    .hero-shop-name-02 {
-      position: absolute;
-      left: 50%;
-      bottom: 2%;
-      transform: translate(-50%, -50%);
+    .carousel-text-02 {
       color: white;
       font-family: Arial, serif;
-      font-size: 1.5vw;
+      font-size: 15px;
     }
-    .photo-padding {
-      margin: 20px;
-    }
-  /*--------------------------------------------------------------
-  # Hero Section
-  --------------------------------------------------------------*/
-  
-  #hero {
-    width: 100%;
-    height: 100vh; 
-    background: #eee;
-    background: url("./img/hair-style-10.jpg") no-repeat 50% 50%;
-    background-size: cover;
 
-    -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 15s; /* Firefox < 16 */
-        -ms-animation: fadein 15s; /* Internet Explorer */
-          -o-animation: fadein 15s; /* Opera < 12.1 */
-            animation: fadein 15s;
-  }
 
-  #carouselExampleCaptions .carousel-inner{
-  height: 800px;
+    .navbar-default{
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+#carouselExampleCaptions .carousel-inner{
+  height: 700px;
 }
 #carouselExampleCaptions.carousel-inner .item{
   height: 100%;
@@ -106,6 +87,35 @@
   height: 100%;
 }
 
+#carouselExampleCaptions .carousel-inner .item{
+  padding-bottom: 50%;
+}
+#carouselExampleCaptions .carousel-inner .first-item{
+  height: 100%;
+  width: 100%;
+  background: url('./images/hair-style-p02.jpg');
+  background-size:cover;
+  background-position: center;
+}
+#carouselExampleCaptions .carousel-inner .second-item{
+  height: 100%;
+  width: 100%;
+  background: url('./images/hair-style-p05.jpg');
+  background-size:cover;
+  background-position: center;
+}
+#carouselExampleCaptions .carousel-inner .third-item{
+  height: 100%;
+  width: 100%;
+  background: url('./images/hair-style-p06.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+.carousel-caption {
+    top: 60%;
+    bottom: auto;
+}
   </style>
   
       <!-- ======= Header Navbar ======= -->
@@ -118,46 +128,41 @@
 </header>
 
 
-    <!-- ======= Carousel Section ======= -->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active first-item">
+      <div class="carousel-caption d-block">
+        <h5 class="carousel-text-01">Salon Unique</h5>
+        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-              <img src="./images/hair-style-p02.jpg" class="d-block w-100 img-responsive"  alt="Responsive image">
-              <div class="carousel-caption d-none d-md-block">                
-                  <h1 class="hero-shop-name-01">Salon Unique</h1>
-                  <p>HAIRDRESSER IN STOCKHOLM</p>           
-              </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/hair-style-p06.jpg" class="d-block w-100"  alt="...">
-          <div class="carousel-caption d-none d-md-block">
-              <h1 class="hero-shop-name-01">Salon Unique</h1>
-              <p>HAIRDRESSER IN STOCKHOLM</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./images/hair-style-p01.jpg" class="d-block w-100" alt="...">
-          <div class="hero-shop-name-01"> 
-              <h5 class="hero-shop-name-01">Salon Unique</h5>
-              <p>HAIRDRESSER IN STOCKHOLM</p>
-          </div>
-        </div>
+    </div>
+    <div class="carousel-item second-item">
+      <div class="carousel-caption d-block">
+        <h5 class="carousel-text-01">Salon Unique</h5>
+        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
+    <div class="carousel-item third-item">
+      <div class="carousel-caption d-block">
+        <h5 class="carousel-text-01">Salon Unique</h5>
+        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
+      </div>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
     <section class="u-align-center u-clearfix u-section-2" id="carousel_48ee">
