@@ -14,17 +14,13 @@
     <meta name="generator" content="Nicepage 3.26.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    
-    
-    
-    
+  
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": ""
-}</script>
+    }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -32,33 +28,37 @@
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+  
+
   </head>
 
   <!-- End of Head -->
 
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body">
-  <header class="u-clearfix u-header u-header" id="sec-962d">
 
-
-    <header >
-  
-  
+    <header class="u-clearfix u-header u-header" id="sec-962d">
+    
+    <!-- ======= Style ======= -->
     <style>
-      #nav-btn {
-        margin: 20px;
-          background-color: violet;
-          display:block;
-          height: 80px;
-          width: 80px;
-          border-width: 2px;
-          border-color: white;
-          border-radius: 50%;
-          font-size: 15px;
-          color: white;
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+    #nav-btn {
+      margin: 20px;
+        background-color: violet;
+        display:block;
+        height: 80px;
+        width: 80px;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 50%;
+        font-size: 15px;
+        color: white;
     }
     .carousel-text-01 {
       color: white;
-      font-family: Cursive, Times, serif;
+      font-family: 'Ephesis', cursive;
       font-size: 50px;
     }
     .carousel-text-02 {
@@ -69,102 +69,174 @@
 
 
     .navbar-default{
-  position: relative;
-  z-index: 2;
-}
+      position: relative;
+      z-index: 2;
+    }
+
+    #carouseIntroSection .carousel-inner{
+      height: 600px;
+    }
+    #carouseIntroSection.carousel-inner .item{
+      height: 100%;
+    }
+    #carouseIntroSection .carousel-inner .item img{
+      width: 100%;
+      height: 100%;
+    }
+
+    #carouseIntroSection .carousel-inner .item{
+      padding-bottom: 50%;
+    }
+    #carouseIntroSection .carousel-inner .first-item{
+      height: 100%;
+      width: 100%;
+      background: url('./images/hair-style-l12.jpg');
+      background-size:cover;
+      background-position: center;
+    }
+    #carouseIntroSection .carousel-inner .second-item{
+      height: 100%;
+      width: 100%;
+      background: url('./images/hair-style-l10.png');
+      background-size:cover;
+      background-position: center;
+    }
+    #carouseIntroSection .carousel-inner .third-item{
+      height: 100%;
+      width: 100%;
+      background: url('./images/hair-style-l02.png');
+      background-size:cover;
+      background-position: center;
+    }
+
+    .carousel-caption {
+        top: 70%;
+        bottom: auto;
+    }
+
+    /* .carousel.carousel-fade .carousel-item {
+        display: block;
+        opacity: 0;
+        transition: opacity ease-out .7s;
+    } */
+
+    .carousel.carousel-fade .carousel-item.active {
+        opacity: 1 !important;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      position: relative;
+      width: 160px;
+      height: 3px;
+      border: none;
+      border-radius: 24px;
+    }
+
+    .carousel-indicators [data-bs-target] span {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #7952b3;
+      border-radius: inherit;
+    }
 
 
-
-
-#carouselExampleCaptions .carousel-inner{
-  height: 700px;
-}
-#carouselExampleCaptions.carousel-inner .item{
-  height: 100%;
-}
-#carouselExampleCaptions .carousel-inner .item img{
-  width: 100%;
-  height: 100%;
-}
-
-#carouselExampleCaptions .carousel-inner .item{
-  padding-bottom: 50%;
-}
-#carouselExampleCaptions .carousel-inner .first-item{
-  height: 100%;
-  width: 100%;
-  background: url('./images/hair-style-p02.jpg');
-  background-size:cover;
-  background-position: center;
-}
-#carouselExampleCaptions .carousel-inner .second-item{
-  height: 100%;
-  width: 100%;
-  background: url('./images/hair-style-p05.jpg');
-  background-size:cover;
-  background-position: center;
-}
-#carouselExampleCaptions .carousel-inner .third-item{
-  height: 100%;
-  width: 100%;
-  background: url('./images/hair-style-p06.jpg');
-  background-size:cover;
-  background-position: center;
-}
-
-.carousel-caption {
-    top: 60%;
-    bottom: auto;
-}
-  </style>
+    </style>
+      
+    <!-- ======= Header Navbar ======= -->
+    <nav class="navbar fixed-top">
+      <form class="container-fluid justify-content-end" action="./About.html">
+        <input type="submit" id="nav-btn" class="btn btn-info" value="About" />
+      </form>
+    </nav>
   
-      <!-- ======= Header Navbar ======= -->
-      <nav class="navbar fixed-top">
-        <form class="container-fluid justify-content-end" action="./About.html">
-          <input type="submit" id="nav-btn" class="btn btn-info" value="About" />
-        </form>
-      </nav>
+  </header>
+
+
+  <!-- ======= Carousel section ======= -->
+  <div id="carouseIntroSection" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouseIntroSection" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+        <span></span>
+      </button>
+      <button type="button" data-bs-target="#carouseIntroSection" data-bs-slide-to="1" aria-label="Slide 2">
+        <span></span>
+      </button>
+      <button type="button" data-bs-target="#carouseIntroSection" data-bs-slide-to="2" aria-label="Slide 3">
+        <span></span>
+      </button>
+    </div>
+    <div class="carousel-inner embed-responsive embed-responsive-16by9">
+      <div class="carousel-item mbed-responsive-item active first-item" data-bs-interval="15000">
+        <div class="carousel-caption d-block">
+          <h5 class="carousel-text-01">Salon Unique</h5>
+          <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
+        </div>
+      </div>
+      <div class="carousel-item  mbed-responsive-item second-item" data-bs-interval="15000">
+        <div class="carousel-caption d-block">
+          <h5 class="carousel-text-01">Salon Unique</h5>
+          <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
+        </div>
+      </div>
+      <div class="carousel-item  mbed-responsive-item third-item"  data-bs-interval="15000">
+        <div class="carousel-caption d-block">
+          <h5 class="carousel-text-01">Salon Unique</h5>
+          <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouseIntroSection" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouseIntroSection" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div>
+
+
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+        <span></span>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        <span></span>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+        <span></span>
+      </button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://assets.codepen.io/162656/bs-carousel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://assets.codepen.io/162656/bs-carousel2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://assets.codepen.io/162656/bs-carousel3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
   
-</header>
 
 
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active first-item">
-      <div class="carousel-caption d-block">
-        <h5 class="carousel-text-01">Salon Unique</h5>
-        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
-      </div>
-    </div>
-    <div class="carousel-item second-item">
-      <div class="carousel-caption d-block">
-        <h5 class="carousel-text-01">Salon Unique</h5>
-        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
-      </div>
-    </div>
-    <div class="carousel-item third-item">
-      <div class="carousel-caption d-block">
-        <h5 class="carousel-text-01">Salon Unique</h5>
-        <p class="carousel-text-02">HAIRDRESSER IN STOCKHOLM</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-
+  <!-- ======= Descriptions ======= -->
     <section class="u-align-center u-clearfix u-section-2" id="carousel_48ee">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-custom-font u-font-playfair-display u-text u-text-3">Oh feel if up to till like.&nbsp;He an thing rapid these after going drawn or.<br>
@@ -174,6 +246,7 @@
     </section>
 
 
+    <!-- ======= Photo gallary ======= -->
     <section class="u-align-center u-clearfix u-section-3" id="carousel_d149">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-custom-font u-font-playfair-display u-text u-text-1">Our Work</h3>
@@ -265,6 +338,9 @@
         <a href="https://nicepage.com/k/adult-html-templates" class="u-btn u-btn-rectangle u-button-style u-palette-3-base u-btn-1">view more</a>
       </div>
     </section>
+
+
+    <!-- ======= Carousel ======= -->
     <section class="u-clearfix u-section-4" id="carousel_c779">
       <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <div id="carousel-1a4b" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
@@ -279,7 +355,7 @@
                 <h3 class="u-text u-text-1"><b>Style 1, </b><i>Elegant</i>
                 </h3>
                 <p class="u-text u-text-2">Elegant style  some text .... .</p>
-                <a href="https://nicepage.com/c/table-html-templates" class="u-black u-btn u-button-style u-btn-1">read more</a>
+                <!-- <a href="https://nicepage.com/c/table-html-templates" class="u-black u-btn u-button-style u-btn-1">read more</a> -->
               </div>
             </div>
             <div class="u-align-center-sm u-align-center-xs u-carousel-item u-container-style u-slide">
@@ -288,7 +364,7 @@
                 <h3 class="u-text u-text-3"><b>Style 2, </b><i>Crazy</i>
                 </h3>
                 <p class="u-text u-text-4">Crazy style  some text .... .</p>
-                <a href="https://nicepage.com/c/sports-website-templates" class="u-black u-btn u-button-style u-btn-2">read more</a>
+                <!-- <a href="https://nicepage.com/c/sports-website-templates" class="u-black u-btn u-button-style u-btn-2">read more</a> -->
               </div>
             </div>
           </div>
@@ -310,26 +386,9 @@
       </div>
     </section>
     
-    <section class="u-clearfix u-section-5" id="carousel_19c6">
-                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
-                    <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-palette-3-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8860"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8860" style=""><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-            c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-text-palette-3-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ef93"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ef93" style=""><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
-            c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
-            c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
-            c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-            c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
-                    </a>
-                    <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/name"><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-text-palette-3-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2194"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-2194" style=""><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
-                    </a>
-                  </div>
-    </section>
+
     
-    
+    <!-- ======= Footer ======= -->
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-134c"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Some text here.</p>
       </div></footer>
@@ -357,7 +416,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
 
+    <script>
+      const myCarousel = document.getElementById("carouseIntroSection");
+      const carouselIndicators = myCarousel.querySelectorAll(
+        ".carousel-indicators button span"
+      );
+      let intervalID;
 
+      const carousel = new bootstrap.Carousel(myCarousel);
+
+      window.addEventListener("load", function () {
+        fillCarouselIndicator(1);
+      });
+
+      myCarousel.addEventListener("slide.bs.carousel", function (e) {
+        let index = e.to;
+        fillCarouselIndicator(++index);
+      });
+
+      function fillCarouselIndicator(index) {
+        let i = 0;
+        for (const carouselIndicator of carouselIndicators) {
+          carouselIndicator.style.width = 0;
+        }
+        clearInterval(intervalID);
+        carousel.pause();
+
+        intervalID = setInterval(function () {
+          i++;
+
+          myCarousel.querySelector(".carousel-indicators .active span").style.width =
+            i + "%";
+
+          if (i >= 100) {
+            // i = 0; -> just in case
+            carousel.next();
+          }
+        }, 50);
+      }
+    </script>
 
   </body>
 </html>
