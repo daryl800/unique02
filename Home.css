@@ -599,9 +599,14 @@
 }
 
 .u-section-3 .u-gallery-1 {
-  height: 782px;
+  /* height: 782px;
   grid-template-columns: repeat(3, auto);
   width: 936px;
+  grid-gap: 10px;
+  margin: 30px auto 0; */
+  height: 1100px;
+  grid-template-columns: repeat(3, auto);
+  width: 1100px;
   grid-gap: 10px;
   margin: 30px auto 0;
 }
