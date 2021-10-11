@@ -195,33 +195,7 @@ h1, h2, h3, h4, h5, h6, p{
   border-radius: 50%;
 }
 
-#pricing-section {
-  margin-left: 320px;
-  margin-right: 320px;
-  text-align: center;
-}
 
-table {
-  background-color:lightgray;
-  padding: 130px;
-}
-th {
-  width: 100px;
-}
-
-tr {
-  /* background-color: #ffc999; */
-}
-
-#td-left {
-  text-align: left; 
-  padding-left: 20%;
-}
-
-#td-right {
-  text-align: right; 
-  padding-right:  20%;
-}
 
 
 /* Opening hours section */
@@ -282,7 +256,53 @@ tr {
         }
 
 
+        /* pricing section */
+
+        #pricing-section {
+          margin-left: 10%;
+          margin-right: 10%;
+          text-align: center;
+        }
+
+        table {
+          background-color:lightgray;
+          padding: 130px;
+        }
+        th {
+          width: 100px;
+        }
+
+        tr {
+          /* background-color: #ffc999; */
+        }
+
+        #td-left {
+          text-align: left; 
+          padding-left: 20%;
+        }
+
+        #td-right {
+          text-align: right; 
+          padding-right:  20%;
+        }
+
+
+
         /* contact form section */
+
+        #contact-form-section {
+          width: 60%;
+          margin-top: 100px;
+          margin-bottom: 50px;
+          margin-right: auto;
+          margin-left: auto;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          padding-left: 10%;
+          padding-right: 10%;
+          text-align: center;
+        }
 
         * {box-sizing: border-box;}
       
@@ -313,16 +333,3 @@ tr {
           background-color: #45a049;
         }
         
-        #contact-form-section {
-          width: 60%;
-          margin-top: 100px;
-          margin-bottom: 50px;
-          margin-right: auto;
-          margin-left: auto;
-          border-radius: 5px;
-          background-color: #f2f2f2;
-          padding: 20px;
-          padding-left: 150px;
-          padding-right: 150px;
-          text-align: center;
-        }
