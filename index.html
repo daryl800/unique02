@@ -101,51 +101,68 @@
       </div>
     </section> -->
 
+    <style>
 
-        <section id="pricing-section" style="margin-top: 100px">
-            <h2>PRISER</h2>
-            <table style="width:80%; margin-left: auto; margin-right: auto;">
-              <tr>
-                <th></th>
-                <th>KLIPPNING</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td id="td-left">Damklippning</td>
-                <td></td>
-                <td id="td-right">600kr</td>
-              </tr>
-              <t">
-                <td id="td-left">Herrklippning</td>
-                <td></td>
-                <td id="td-right">500kr</td>
-              </tr>
-              <tr">
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr">
-                <th></th>
-                <th>FÄRG</th>
-                <th></th>
-              </tr>
-              <t>
-                <td id="td-left">Färg (Ny kund)</td>
-                <td></td>
-                <td id="td-right">120kr</td>
-              </tr>
-              <tr>
-                <td id="td-left">Root touch-up (utväxt max 10v)</td>
-                <td></td>
-                <td id="td-right">1000kr</td>
-              </tr>
-            </table>
-        </section>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+    <!-- ======= Hair Style Section ======= -->
+    <div class="row"> 
+      <div class="column">
+          <img src="./images/hair-style-p01.jpg" style="width:100%"  >
+      </div>
+      <div class="column">
+          <img src="./images/hair-style-p02.jpg" style="width:100%" >
+      </div>
+      <div class="column">
+          <img src="./images/hair-style-p06.jpg" style="width:100%" >
+      </div>
+    </div>
 
     <!-- ======= Photo Gallary Section ======= -->
     <section class="u-align-center u-clearfix u-section-3" id="carousel_d149" style="margin-top:100px">
-      <h2 style="text-align:center;">DISCOVER</h2>
+      <h2 style="text-align:center;">More to discover ...</h2>
       <!-- <div class="u-clearfix u-sheet u-sheet-1"> -->
         <div class="u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
           <div class="u-gallery-inner u-gallery-inner-1">
@@ -239,7 +256,7 @@
 
   <!-- ======= Highlight Section ======= -->
     <section style="margin-top:100px">
-      <h2 style="text-align:center;">HIGHLIGHT</h2>
+      <h2 style="text-align:center;">Highlight</h2>
       <div id="highlight-section-background">
         <div id="carouselExampleCaptions" class="carousel carousel-dark" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -283,38 +300,10 @@
     </section>  
     <br><br><br><br>
     
-
-    <style>
-      .dot {
-        border: none;
-        background:none;
-        outline: none;
-        margin: 20px;
-        height: 130px;
-        width: 130px;
-        background-color: whitesmoke;
-        border-radius: 50%;
-        text-align: center;
-        vertical-align: middle;
-        word-wrap: break-word;
-      }
-
-      .dot:hover {
-        background-color: #4CAF50;
-        color: white;
-      }
-
-        #opening-hour-section {
-          background-color: lightgray;
-          padding-top: 50px;
-          padding-bottom: 50px;
-          text-align: center;
-        }
-
-      </style>
       
-        <h3 style="text-align:center;">OPENING HOURS</h3><br>
-      <section id="opening-hour-section">
+      <!-- ======= Opening hours Section ======= -->
+        <h3 style="text-align:center;">Opening hours</h3><br>
+        <section id="opening-hour-section">
         <div style="align-items: auto;">
           <button class="dot"><b>MON</b> <br> 10:00 - 16:00</button>
           <!-- <input type="image" src="./images/style-02.jpg" onmouseover="this.src='./images/style-01.jpg'" onmouseout="this.src='./images/style-02.jpg'"> -->
@@ -328,126 +317,132 @@
     </section>
 
 
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing-section" style="margin-top: 100px;">
+        <h2>Priser</h2>
+        <!-- <table style="width:80%; margin-left: auto; margin-right: auto;"> -->
+          <table style="width:100%; ">
+          <tr>
+            <th></th>
+            <th>KLIPPNING</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td id="td-left">Damklippning</td>
+            <td></td>
+            <td id="td-right">600kr</td>
+          </tr>
+          <t">
+            <td id="td-left">Herrklippning</td>
+            <td></td>
+            <td id="td-right">500kr</td>
+          </tr>
+          <tr>
+            <th></th>
+            <th>FÄRG</th>
+            <th></th>
+          </tr>
+          <t>
+            <td id="td-left">Färg (Ny kund)</td>
+            <td></td>
+            <td id="td-right">120kr</td>
+          </tr>
+          <tr>
+            <td id="td-left">Root touch-up (utväxt max 10v)</td>
+            <td></td>
+            <td id="td-right">1000kr</td>
+          </tr>
+        </table>
+    </section>
+
 <!-- ======= Contacts ======= -->
-<section class="u-clearfix u-section-5" id="carousel_19c6">
-  <div class="u-clearfix u-sheet u-sheet-1">
-    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-      <div class="u-layout">
-        <div class="u-layout-row">
-          <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
-            <div class="u-container-layout u-container-layout-1">
-              <h3 class="u-custom-font u-font-playfair-display u-text u-text-1">Contacts</h3>
-              <p class="u-custom-font u-heading-font u-text u-text-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h5 class="u-text u-text-3">+ 111 23 23 444<br>+ 111 34 34 555
-              </h5>
-              <div class="u-social-icons u-spacing-10 u-social-icons-1">
-                <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-palette-3-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8860"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8860" style=""><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-        c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
-                </a>
-                <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span class="u-icon u-icon-circle u-social-icon u-social-twitter u-text-palette-3-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ef93"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ef93" style=""><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
-        c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
-        c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
-        c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-        c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
-                </a>
-                <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/name"><span class="u-icon u-icon-circle u-social-icon u-social-instagram u-text-palette-3-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2194"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-2194" style=""><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-        z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
-        C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
-        c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
-            <div class="u-container-layout u-valign-middle u-container-layout-2">
-              <div class="u-form u-form-1">
-                <form action="#" method="POST" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
-                  <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-1">
-                    <label for="email-319a" class="u-label u-text-body-alt-color u-label-1">Email</label>
-                    <input type="email" placeholder="Enter a valid email address" id="email-319a" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
-                  </div>
-                  <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-2">
-                    <label for="name-319a" class="u-label u-text-body-alt-color u-label-2">Name</label>
-                    <input type="text" placeholder="Enter your Name" id="name-319a" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
-                  </div>
-                  <div class="u-form-address u-form-group u-form-group-3">
-                    <label for="address-452f" class="u-label u-text-body-alt-color u-label-3">Address</label>
-                    <input type="text" placeholder="Enter your address" id="address-452f" name="address" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
-                  </div>
-                  <div class="u-form-group u-form-message u-form-group-4">
-                    <label for="message-319a" class="u-label u-text-body-alt-color u-label-4">Message</label>
-                    <textarea placeholder="Enter your message" rows="4" cols="50" id="message-319a" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required=""></textarea>
-                  </div>
-                  <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                    <a href="#" class="u-btn u-btn-submit u-button-style u-palette-3-base u-btn-1">Submit</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden">
-                  </div>
-                  <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                  <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                  <input type="hidden" value="" name="recaptchaResponse">
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+    <style>
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border: solid;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 120px;
+
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      #contact-form-section {
+        width: 60%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        padding-left: 150px;
+        padding-right: 150px;
+        text-align: center;
+      }
+      </style>
+
+    <div id="contact-form-section">
+          <h2>Contact Us</h2>
+
+          <form action="/action_page.php">           
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <input type="text" id="lname" name="lastname" placeholder="E-post.">
+            <input type="text" id="lname" name="lastname" placeholder="Subject.">
+            <textarea id="subject" name="subject" placeholder="Message ..." style="height:170px"></textarea>
+            <input type="submit" value="Send">
+          </form>
+
     </div>
-  </div>
+
+
 </section>
-
-
 
     <!-- ======= Footer ======= -->
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-134c">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <br><br>
             <h4>Salon Unique</h4>
-            <div class="mapouter">
-              <div class="gmap_canvas"><iframe width="380" height="200" id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=Sibyllegatan%2051,%20114%2043%20Stockholm&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                  href="https://fmovies-online.net">fmovies</a><br>
-                <style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 200px;
-                    width: 380px;
-                  }
-                </style><a href="https://www.embedgooglemap.net">google map widget for website</a>
-                <style>
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 200px;
-                    width: 380px;
-                  }
-                </style>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            
-          </div>
-          <div class="col">
-           
-          </div>
+            <iframe width="1200" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=768&amp;height=251&amp;hl=en&amp;q=Sibyllegatan%2051%20stockholm+(Salong%20Unique)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.cn/zh/info/covid-19#info'>冠狀病毒症狀</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e4642a19c0d80e952e069224addc6482c32232fa'></script>
         </div>
-      </div>
     </footer>
 
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://www.google.com/" target="_blank">
-        <span>Designed and</span>
-      </a>
+      
+      <div id="social-footer" class="social-links mr-3">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i>
+        <a href="#" class="google-plus"><i class="fa fa-youtube"></i></a>
+      </div>
+    
+
       <p class="u-text">
-        <span>created with</span>
+        <span>Designed and created by</span>
       </p>
       <a class="u-link" href="https://nicepage.com/" target="_blank">
         <span>DN Software</span>
-      </a>. 
+      </a>
+
     </section>
     
 
