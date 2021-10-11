@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, p{
   left: 0;
   width: 0;
   height: 100%;
-  background: grey;
+  background: #944545;
   border-radius: inherit;
 }
 
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .carousel-control-button {
-  background-color: grey;
+  background-color: #944545;
   border: none;
   color: white;
   padding: 20px;
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6, p{
     }
 
       #opening-hour-section {
-        background-color: lightgray;
+        background-color: #ffe6e6;
         padding-top: 50px;
         padding-bottom: 50px;
         text-align: center;
@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6, p{
         }
 
         table {
-          background-color:lightgray;
+          background-color: #ffe6e6;
           padding: 130px;
         }
         th {
@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6, p{
           margin-right: auto;
           margin-left: auto;
           border-radius: 5px;
-          background-color: #f2f2f2;
+          background-color: #ffe6e6;
           padding: 20px;
           padding-left: 10%;
           padding-right: 10%;
